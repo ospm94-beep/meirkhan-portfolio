@@ -62,30 +62,6 @@ let
     Cleaned = Table.SelectRows(AddedProfit, each [Quantity] > 0 and [Unit Price] > 0)
 in
     Cleaned
-
-✅ DAX Measures
-
-Total Revenue = SUM(FactSales[Revenue])
-
-Total Profit = SUM(FactSales[Profit])
-
-Total Quantity = SUM(FactSales[Quantity])
-
-Avg Price = DIVIDE([Total Revenue], [Total Quantity])
-
-YoY Revenue Growth =
-VAR PrevYear = CALCULATE([Total Revenue], DATEADD(DimDate[Date], -1, YEAR))
-RETURN DIVIDE([Total Revenue] - PrevYear, PrevYear)
-
-Revenue by Territory = SUMX(FactSales, FactSales[Revenue])
-
-✅ Project Files
-
-PowerBI_Project/
-│
-├── AdventureWorksData.xlsx
-├── README.md
-├── DAX_Measures.txt
 ├── Data_Model.png
 ├── Dashboard_Page1.png
 └── Dashboard_Page2.png
