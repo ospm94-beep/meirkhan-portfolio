@@ -77,3 +77,17 @@ CALCULATE([Total Sales], Walmart_Sales[Holiday_Flag] = 1)
 
 YoY Growth % =
 DIVIDE([Total Sales] - [Previous Year Sales], [Previous Year Sales])
+
+
+✅ How to Use
+
+Download the PBIX file
+Open in Power BI Desktop
+Use slicers (Store, Year, Month) to explore insights
+Hover over points to view tooltips
+
+
+👤 Author
+Meirkhan Ospanov
+Power BI & Data Analytics Portfolio
+
